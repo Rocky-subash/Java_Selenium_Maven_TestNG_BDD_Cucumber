@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "C:\Users\ssubshs\Videos\Subash Study\Java study + Selenium + maven + Test NG + BDD + Cumber\src\main\java\seleniumPractice\testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+<!--  thread count, parallel , name  is key word 
+for name we can give any value .
+Thread count will determine number of browser can be launched or determine how many cases can be tested at once , depends on the system confirguration
+ -->
+ <groups>
+ 	<run>
+ 			
+	 <include name="smoke"></include>
+ 	</run>
+ </groups>
+  <test thread-count="-1" parallel="classes" name="Test">
+    <classes>
+      <class name="testNgBasic.FindeElements"/>
+      <class name="testNgBasic.WindowHandling"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

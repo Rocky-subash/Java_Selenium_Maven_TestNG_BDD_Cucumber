@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="10" passed="0" failed="2" skipped="6">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-15T18:24:27Z" name="Suite" finished-at="2026-04-15T18:24:54Z" duration-ms="27336">
+    <groups>
+      <group name="reg">
+        <method signature="TestNgAttributes1.login()[pri:2, instance:testNgBasic.TestNgAttributes1@2a266d09]" name="login" class="testNgBasic.TestNgAttributes1"/>
+        <method signature="TestNgAttributes1.login()[pri:2, instance:testNgBasic.TestNgAttributes1@1bb266b3]" name="login" class="testNgBasic.TestNgAttributes1"/>
+      </group> <!-- reg -->
+      <group name="smoke">
+        <method signature="TestNgAttributes1.signUp(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testNgBasic.TestNgAttributes1@2a266d09]" name="signUp" class="testNgBasic.TestNgAttributes1"/>
+        <method signature="TestNgAttributes1.addtoCart()[pri:4, instance:testNgBasic.TestNgAttributes1@2a266d09]" name="addtoCart" class="testNgBasic.TestNgAttributes1"/>
+        <method signature="TestNgAttributes1.signUp(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testNgBasic.TestNgAttributes1@1bb266b3]" name="signUp" class="testNgBasic.TestNgAttributes1"/>
+        <method signature="TestNgAttributes1.addtoCart()[pri:4, instance:testNgBasic.TestNgAttributes1@1bb266b3]" name="addtoCart" class="testNgBasic.TestNgAttributes1"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestNgAttributes1.searchProduct()[pri:3, instance:testNgBasic.TestNgAttributes1@2a266d09]" name="searchProduct" class="testNgBasic.TestNgAttributes1"/>
+        <method signature="TestNgAttributes1.searchProduct()[pri:3, instance:testNgBasic.TestNgAttributes1@1bb266b3]" name="searchProduct" class="testNgBasic.TestNgAttributes1"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2026-04-15T18:24:27Z" name="ChromeTest" finished-at="2026-04-15T18:24:39Z" duration-ms="12648">
+      <class name="testNgBasic.TestNgAttributes1">
+        <test-method signature="signUp(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testNgBasic.TestNgAttributes1@2a266d09]" started-at="2026-04-15T18:24:27Z" name="signUp" description="This test will do the signup process" finished-at="2026-04-15T18:24:39Z" duration-ms="12570" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kaushick350@gamail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Method TestNgAttributes1.signUp(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testNgBasic.TestNgAttributes1@2a266d09] should have thrown an exception of type class java.util.NoSuchElementException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Method TestNgAttributes1.signUp(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testNgBasic.TestNgAttributes1@2a266d09] should have thrown an exception of type class java.util.NoSuchElementException
+at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:80)
+at org.testng.internal.Invoker.considerExceptions(Invoker.java:1139)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:612)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="login()[pri:2, instance:testNgBasic.TestNgAttributes1@2a266d09]" started-at="2026-04-15T18:24:39Z" name="login" finished-at="2026-04-15T18:24:39Z" depends-on-methods="testNgBasic.TestNgAttributes1.signUp" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgAttributes1.login()[pri:2, instance:testNgBasic.TestNgAttributes1@2a266d09] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgAttributes1.login()[pri:2, instance:testNgBasic.TestNgAttributes1@2a266d09] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="searchProduct()[pri:3, instance:testNgBasic.TestNgAttributes1@2a266d09]" started-at="2026-04-15T18:24:39Z" name="searchProduct" finished-at="2026-04-15T18:24:39Z" depends-on-methods="testNgBasic.TestNgAttributes1.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgAttributes1.searchProduct()[pri:3, instance:testNgBasic.TestNgAttributes1@2a266d09] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgAttributes1.searchProduct()[pri:3, instance:testNgBasic.TestNgAttributes1@2a266d09] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="addtoCart()[pri:4, instance:testNgBasic.TestNgAttributes1@2a266d09]" started-at="2026-04-15T18:24:39Z" name="addtoCart" finished-at="2026-04-15T18:24:39Z" depends-on-methods="testNgBasic.TestNgAttributes1.searchProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgAttributes1.addtoCart()[pri:4, instance:testNgBasic.TestNgAttributes1@2a266d09] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgAttributes1.addtoCart()[pri:4, instance:testNgBasic.TestNgAttributes1@2a266d09] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtoCart -->
+      </class> <!-- testNgBasic.TestNgAttributes1 -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2026-04-15T18:24:27Z" name="FirefoxTest" finished-at="2026-04-15T18:24:54Z" duration-ms="27335">
+      <class name="testNgBasic.TestNgAttributes1">
+        <test-method signature="signUp(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testNgBasic.TestNgAttributes1@1bb266b3]" started-at="2026-04-15T18:24:27Z" name="signUp" description="This test will do the signup process" finished-at="2026-04-15T18:24:54Z" duration-ms="27147" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kaushick350@gamail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Method TestNgAttributes1.signUp(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testNgBasic.TestNgAttributes1@1bb266b3] should have thrown an exception of type class java.util.NoSuchElementException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Method TestNgAttributes1.signUp(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testNgBasic.TestNgAttributes1@1bb266b3] should have thrown an exception of type class java.util.NoSuchElementException
+at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:80)
+at org.testng.internal.Invoker.considerExceptions(Invoker.java:1139)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:612)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="login()[pri:2, instance:testNgBasic.TestNgAttributes1@1bb266b3]" started-at="2026-04-15T18:24:54Z" name="login" finished-at="2026-04-15T18:24:54Z" depends-on-methods="testNgBasic.TestNgAttributes1.signUp" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgAttributes1.login()[pri:2, instance:testNgBasic.TestNgAttributes1@1bb266b3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgAttributes1.login()[pri:2, instance:testNgBasic.TestNgAttributes1@1bb266b3] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="searchProduct()[pri:3, instance:testNgBasic.TestNgAttributes1@1bb266b3]" started-at="2026-04-15T18:24:54Z" name="searchProduct" finished-at="2026-04-15T18:24:54Z" depends-on-methods="testNgBasic.TestNgAttributes1.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgAttributes1.searchProduct()[pri:3, instance:testNgBasic.TestNgAttributes1@1bb266b3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgAttributes1.searchProduct()[pri:3, instance:testNgBasic.TestNgAttributes1@1bb266b3] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="addtoCart()[pri:4, instance:testNgBasic.TestNgAttributes1@1bb266b3]" started-at="2026-04-15T18:24:54Z" name="addtoCart" finished-at="2026-04-15T18:24:54Z" depends-on-methods="testNgBasic.TestNgAttributes1.searchProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNgAttributes1.addtoCart()[pri:4, instance:testNgBasic.TestNgAttributes1@1bb266b3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNgAttributes1.addtoCart()[pri:4, instance:testNgBasic.TestNgAttributes1@1bb266b3] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtoCart -->
+      </class> <!-- testNgBasic.TestNgAttributes1 -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

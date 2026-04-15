@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="123456"/>
+  <parameter name="email" value="kaushick350@gamail.com"/>
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="reg"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNgBasic.TestNgAttributes1">
+        <methods>
+          <include name="login"/>
+          <include name="signUp" invocation-numbers="0"/>
+          <include name="addtoCart"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- testNgBasic.TestNgAttributes1 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="reg"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNgBasic.TestNgAttributes1">
+        <methods>
+          <include name="login"/>
+          <include name="signUp" invocation-numbers="0"/>
+          <include name="addtoCart"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- testNgBasic.TestNgAttributes1 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
